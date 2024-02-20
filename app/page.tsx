@@ -1,7 +1,9 @@
+import Header from "@/component/Header";
+
 const HomePage = () => {
   return (
     <main className="grid">
-      <header>this is mweb navbar</header>
+      <Header />
       <div>
         this is body
       </div>
