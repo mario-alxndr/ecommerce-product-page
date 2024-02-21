@@ -1,10 +1,11 @@
-import Header from "@/component/Header";
+// Component
+import Header from "@/components/Header";
 
 const HomePage = () => {
   return (
-    <main className="grid">
+    <main className={"block max-w-7xl mx-auto bg-white"}>
       <Header />
-      <div>
+      <div className={"h-screen"}>
         this is body
       </div>
     </main>
