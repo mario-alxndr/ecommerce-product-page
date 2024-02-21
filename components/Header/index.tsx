@@ -1,7 +1,10 @@
-// Component
+// Node Modules
+import React from 'react';
+
+// Components
 import Image from "next/image";
 
-// Asset
+// Assets
 import logo from '@/public/logo.svg';
 
 const Header = () => {
