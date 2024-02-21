@@ -6,6 +6,8 @@ import Image from "next/image";
 
 // Assets
 import logo from '@/public/logo.svg';
+import chart from '@/public/icon/icon-cart.svg';
+import profilePict from '@/public/image-avatar.png';
 
 const Header = () => {
   return (
@@ -26,6 +28,8 @@ const Header = () => {
       <div className={"h-16 self-end text-center cursor-pointer"}>
         Contact
       </div>
+      <Image className={'self-center justify-self-center col-start-11'} src={chart} alt={'chart'} />
+      <Image className={'self-center justify-self-center col-start-12 w-12 h-12 border-2 border-amber-300 rounded-3xl'} src={profilePict} alt={'profile-picture'} />
     </header>
   )
 }
