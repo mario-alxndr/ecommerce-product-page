@@ -11,7 +11,7 @@ import profilePict from '@/public/image-avatar.png';
 
 const Header = () => {
   return (
-    <header className={"grid grid-cols-12 h-28 bg-white px-6 border-b-2"}>
+    <header className={"grid grid-cols-12 h-28 bg-white px-6 border-b-2 border-light-grayish"}>
       <Image className={'self-center col-span-2'} src={logo} alt={'logo'} />
       <div className={"h-16 self-end text-center cursor-pointer"}>
         Collection
@@ -29,7 +29,7 @@ const Header = () => {
         Contact
       </div>
       <Image className={'self-center justify-self-center col-start-11'} src={chart} alt={'chart'} />
-      <Image className={'self-center justify-self-center col-start-12 w-12 h-12 border-2 border-amber-300 rounded-3xl'} src={profilePict} alt={'profile-picture'} />
+      <Image className={'self-center justify-self-center col-start-12 w-12 h-12 border-2 rounded-3xl'} src={profilePict} alt={'profile-picture'} />
     </header>
   )
 }

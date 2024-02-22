@@ -16,7 +16,13 @@
   }
 }
 
+@font-face {
+  font-family: "KumbhSans";
+  src: url("/public/fonts/KumbhSans-VariableFont_YOPQ\,wght.ttf") format('truetype');
+}
+
 body {
+  font-family: "KumbhSans", sans-serif !important;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
