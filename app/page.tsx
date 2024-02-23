@@ -16,7 +16,7 @@ const HomePage = () => {
   return (
     <main className={"block max-w-7xl mx-auto bg-white"}>
       <Header />
-      <div className={"h-screen grid grid-cols-2 py-20 px-14"}>
+      <div className={"h-fit grid grid-cols-2 py-20 px-14"}>
         <div>
           <Image className={'rounded-2xl'} src={ImageProduct1} alt={'preview-image-1'}/>
           <div className={'flex mt-8 gap-7'}>
