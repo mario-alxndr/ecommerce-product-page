@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     colors: {
       'light-grayish': '#F7F8FD',
+      'grayish': '#B6BCC8',
       'orange': '#FF7D1A',
       'paleorange': '#FFEDE0',
       'white': '#FFFFFF',

@@ -29,6 +29,7 @@ const HomePage = () => {
         <div className={'p-16'}>
           <p className={'text-orange text-sm'}>SNEAKER COMPANY</p>
           <p className={'text-5xl font-bold mt-6'}>Fall Limited Edition Sneakers</p>
+          <p className={'mt-6 text-grayish text-sm'}>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
         </div>
       </div>
     </main>
