@@ -8,6 +8,7 @@ const config: Config = {
   ],
   theme: {
     colors: {
+      'dark-grayish': '#68707D',
       'light-grayish': '#F7F8FD',
       'grayish': '#B6BCC8',
       'orange': '#FF7D1A',

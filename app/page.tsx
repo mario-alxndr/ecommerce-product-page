@@ -2,6 +2,7 @@
 import React from 'react';
 
 // Component
+import Counter from '@/components/Counter';
 import Header from "@/components/Header";
 import Image from "next/image";
 
@@ -11,15 +12,16 @@ import ImageProductThumbnail1 from '@/public/image-product-1-thumbnail.jpg';
 import ImageProductThumbnail2 from '@/public/image-product-2-thumbnail.jpg';
 import ImageProductThumbnail3 from '@/public/image-product-3-thumbnail.jpg';
 import ImageProductThumbnail4 from '@/public/image-product-4-thumbnail.jpg';
+import AddToChartButton from '@/components/AddToChartButton';
 
 const HomePage = () => {
   return (
     <main className={"block max-w-7xl mx-auto bg-white"}>
       <Header />
       <div className={"h-fit grid grid-cols-2 py-20 px-14"}>
-        <div>
-          <Image className={'rounded-2xl'} src={ImageProduct1} alt={'preview-image-1'}/>
-          <div className={'flex mt-8 gap-7'}>
+        <div className={'w-[440px] mx-auto'}>
+          <Image className={'rounded-2xl mx-auto'} src={ImageProduct1} alt={'preview-image-1'} height={440}/>
+          <div className={'flex mt-8 gap-7 '}>
             <Image className={'rounded-xl'} src={ImageProductThumbnail1} alt={'preview-image-1'}/>
             <Image className={'rounded-xl'} src={ImageProductThumbnail2} alt={'preview-image-2'}/>
             <Image className={'rounded-xl'} src={ImageProductThumbnail3} alt={'preview-image-3'}/>
@@ -29,7 +31,16 @@ const HomePage = () => {
         <div className={'p-16'}>
           <p className={'text-orange text-sm'}>SNEAKER COMPANY</p>
           <p className={'text-5xl font-bold mt-6'}>Fall Limited Edition Sneakers</p>
-          <p className={'mt-6 text-grayish text-sm'}>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+          <p className={'mt-6 text-dark-grayish text-sm'}>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+          <div className={'mt-8 flex'}>
+            <p className={'text-4xl font-bold mr-4'}>$125.00</p>
+            <div className={'self-center px-2 py-1 bg-paleorange rounded-lg font-normal'}><p className={'text-base text-orange font-bold'}>50%</p></div>
+          </div>
+          <p className={'text-grayish line-through mt-4'}>$250.00</p>
+          <div className={'flex mt-8 gap-4'}>
+            <Counter />
+            <AddToChartButton />
+          </div>
         </div>
       </div>
     </main>
