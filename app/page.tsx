@@ -2,6 +2,7 @@
 import React from 'react';
 
 // Component
+import Carousel from '@/components/Carousel';
 import Counter from '@/components/Counter';
 import Header from "@/components/Header";
 import Image from "next/image";
@@ -19,6 +20,7 @@ const HomePage = () => {
     <main className={"block max-w-7xl mx-auto bg-white"}>
       <Header />
       <div className={"h-fit grid grid-cols-1 dweb:grid-cols-2 dweb:py-20 dweb:px-14"}>
+        {/* dweb image content */}
         <div className={'hidden w-[440px] mx-auto dweb:block'}>
           <Image className={'rounded-2xl mx-auto'} src={ImageProduct1} alt={'preview-image-1'} height={440}/>
           <div className={'flex mt-8 gap-7 '}>
@@ -27,6 +29,10 @@ const HomePage = () => {
             <Image className={'rounded-xl'} src={ImageProductThumbnail3} alt={'preview-image-3'}/>
             <Image className={'rounded-xl'} src={ImageProductThumbnail4} alt={'preview-image-4'}/>
           </div>
+        </div>
+        {/* mweb image content */}
+        <div className={'dweb:hidden'}>
+          <Carousel />
         </div>
         <div className={'p-5 dweb:p-16'}>
           <p className={'text-orange text-sm'}>SNEAKER COMPANY</p>

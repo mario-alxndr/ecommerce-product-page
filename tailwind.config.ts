@@ -23,7 +23,7 @@ const config: Config = {
       },
     },
     screens: {
-      'dweb': '431px',
+      'dweb': '980px',
     }
   },
   plugins: [],

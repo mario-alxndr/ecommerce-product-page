@@ -14,7 +14,7 @@ const Header = () => {
     <header className={
       "grid grid-cols-12 h-16 bg-white px-6 border-b-2 border-light-grayish dweb:h-28"
     }>
-      <Image className={'self-center col-span-2'} src={logo} alt={'logo'} />
+      <Image className={'col-span-4 self-center dweb:col-span-2'} src={logo} alt={'logo'} />
       <div className={"hidden h-16 self-end text-center cursor-pointer dweb:block"}>
         Collection
       </div>
