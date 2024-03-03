@@ -2,18 +2,11 @@
 import React from 'react';
 
 // Component
+import AddToChartButton from '@/components/AddToChartButton';
 import Carousel from '@/components/Carousel';
 import Counter from '@/components/Counter';
 import Header from "@/components/Header";
-import Image from "next/image";
-
-// Assets
-import ImageProduct1 from '@/public/image-product-1.jpg';
-import ImageProductThumbnail1 from '@/public/image-product-1-thumbnail.jpg';
-import ImageProductThumbnail2 from '@/public/image-product-2-thumbnail.jpg';
-import ImageProductThumbnail3 from '@/public/image-product-3-thumbnail.jpg';
-import ImageProductThumbnail4 from '@/public/image-product-4-thumbnail.jpg';
-import AddToChartButton from '@/components/AddToChartButton';
+import ImagePreview from '@/components/ImagePreview';
 
 const HomePage = () => {
   return (
@@ -22,13 +15,7 @@ const HomePage = () => {
       <div className={"h-fit grid grid-cols-1 dweb:grid-cols-2 dweb:py-20 dweb:px-14"}>
         {/* dweb image content */}
         <div className={'hidden w-[440px] mx-auto dweb:block'}>
-          <Image className={'rounded-2xl mx-auto'} src={ImageProduct1} alt={'preview-image-1'} height={440}/>
-          <div className={'flex mt-8 gap-7 '}>
-            <Image className={'rounded-xl'} src={ImageProductThumbnail1} alt={'preview-image-1'}/>
-            <Image className={'rounded-xl'} src={ImageProductThumbnail2} alt={'preview-image-2'}/>
-            <Image className={'rounded-xl'} src={ImageProductThumbnail3} alt={'preview-image-3'}/>
-            <Image className={'rounded-xl'} src={ImageProductThumbnail4} alt={'preview-image-4'}/>
-          </div>
+          <ImagePreview/>
         </div>
         {/* mweb image content */}
         <div className={'dweb:hidden'}>

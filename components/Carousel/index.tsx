@@ -1,7 +1,7 @@
 'use client'
 
 // Node Modules
-import React, { useState } from 'react';
+import React from 'react';
 
 // Component
 import Slider from "react-slick";
@@ -22,16 +22,6 @@ import PreviousIcon from '@/public/icon/icon-previous.svg';
 import NextIcon from '@/public/icon/icon-next.svg';
 
 const Carousel = () => {
-  // const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
-
-  // const onClickPrevButton = () => {
-
-  // };
-
-  // const onClickNextButton = () => {
-
-  // };
-
   const PrevArrow = (props: any) => {
     const { onClick } = props;
 
