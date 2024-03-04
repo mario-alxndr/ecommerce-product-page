@@ -42,16 +42,22 @@ const ImagePreview = () => {
             setCurrentIndex(selectedIndex)
           };
 
-          // const imageThumbnailClassname = cn('rounded-xl', {
-          //   'border' : index === currentIndex
-          // });
+          const imageThumbnailClassname = cn('rounded-xl relative cursor-pointer', {
+            'border-2 border-orange' : index === currentIndex
+          });
+
+          const overlayBlurClassname = cn('absolute w-[88px] h-[88px] bg-white opacity-0 rounded-xl hover:opacity-75', {
+            'opacity-75': index === currentIndex
+          });
 
           return (
-            <div onClick={handleClickImage(index)}>
+            <div className={imageThumbnailClassname} onClick={handleClickImage(index)}>
+              {index === currentIndex ? (
+                <div className={'absolute w-[88px] h-[88px] bg-white rounded-xl opacity-75'}/>
+              ) : <div className={overlayBlurClassname}/> }
               <Image 
                 alt={`preview-image-${index}`}
                 className={'rounded-xl'}
-                // className={imageThumbnailClassname}
                 src={image}
               />
             </div>
