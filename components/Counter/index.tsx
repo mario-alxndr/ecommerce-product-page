@@ -14,7 +14,7 @@ const Counter = () => {
       <div className={'cursor-pointer py-[10px]'}>
         <Image className={'self-center'} src={IconMinus} alt={'icon-minus'} width={12} height={4}/>
       </div>
-      <p className={'text-sm font-bold'}>0</p>
+      <p className={'text-black text-sm font-bold'}>0</p>
       <div className={'cursor-pointer py-[6px]'}>
         <Image className={'self-center cursor-pointer'} src={IconPlus} alt={'icon-plus'} width={12} height={4}/>
       </div>
